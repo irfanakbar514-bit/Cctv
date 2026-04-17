@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Paket Produk | Patriot CCTV</title>
+    <title>Pilih Merek CCTV | Patriot CCTV</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,55 +12,67 @@
         <div class="logo">PATRIOT<span>CCTV</span></div>
         <nav>
             <a href="index.html">Home</a>
-            <a href="produk.html">Produk</a>
+            <div class="dropdown">
+                <a href="produk.html">Produk ▾</a>
+                <div class="dropdown-content">
+                    <a href="produk-hikvision.html">Hikvision</a>
+                    <a href="produk-dahua.html">Dahua</a>
+                    <a href="produk-tiandy.html">Tiandy</a>
+                </div>
+            </div>
             <a href="hasil-pemasangan.html">Hasil Pasang</a>
         </nav>
     </header>
 
     <section class="container" style="margin-top: 100px;">
         <div class="section-title reveal">
-            <h2>Pilihan Paket CCTV Berkualitas</h2>
+            <h2>Katalog Berdasarkan Merek</h2>
+            <p>Silakan pilih merek CCTV favorit Anda untuk melihat detail produk dan paket pemasangan.</p>
             <div class="line"></div>
         </div>
+
         <div class="grid">
-            <div class="product-card reveal">
-                <div class="card-header">PAKET 2 KAMERA</div>
-                <div class="product-info">
-                    <ul class="spec-list">
-                        <li>2 Unit Kamera Indoor/Outdoor</li>
-                        <li><strong>Hardisk 500GB Khusus CCTV</strong></li>
-                        <li><strong>Kabel Coaxial 20 Meter</strong></li>
-                        <li>Setting Pantau Smartphone Online</li>
-                    </ul>
-                    <a href="https://wa.me/6281267525093" class="btn-wa">Konsultasi Sekarang</a>
+            <a href="produk-hikvision.html" class="brand-card reveal">
+                <div class="brand-img">
+                    <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=500" alt="Hikvision">
                 </div>
-            </div>
-            <div class="product-card reveal">
-                <div class="card-header best-seller">PAKET 4 KAMERA (BEST)</div>
-                <div class="product-info">
-                    <ul class="spec-list">
-                        <li>4 Unit Kamera Indoor/Outdoor</li>
-                        <li><strong>Hardisk 500GB Khusus CCTV</strong></li>
-                        <li><strong>Kabel Coaxial 40 Meter</strong></li>
-                        <li>Setting Pantau Smartphone Online</li>
-                    </ul>
-                    <a href="https://wa.me/6281267525093" class="btn-wa">Konsultasi Sekarang</a>
+                <div class="brand-info">
+                    <h3>HIKVISION</h3>
+                    <p>Otoritas keamanan nomor 1 di dunia dengan ketahanan perangkat yang luar biasa.</p>
+                    <span class="btn-sm">Lihat Produk ➔</span>
                 </div>
-            </div>
-            <div class="product-card reveal">
-                <div class="card-header">PAKET 8 KAMERA</div>
-                <div class="product-info">
-                    <ul class="spec-list">
-                        <li>8 Unit Kamera Premium</li>
-                        <li><strong>Hardisk 1TB Khusus CCTV</strong></li>
-                        <li><strong>Kabel Coaxial 80 Meter</strong></li>
-                        <li>Survey Lokasi & Setting Online</li>
-                    </ul>
-                    <a href="https://wa.me/6281267525093" class="btn-wa">Konsultasi Sekarang</a>
+            </a>
+
+            <a href="produk-dahua.html" class="brand-card reveal">
+                <div class="brand-img">
+                    <img src="https://images.unsplash.com/photo-1590856029826-c7a73142bbf1?w=500" alt="Dahua">
                 </div>
-            </div>
+                <div class="brand-info">
+                    <h3>DAHUA</h3>
+                    <p>Inovasi Full Color terbaik. Gambar tetap berwarna meskipun malam hari.</p>
+                    <span class="btn-sm">Lihat Produk ➔</span>
+                </div>
+            </a>
+
+            <a href="produk-tiandy.html" class="brand-card reveal">
+                <div class="brand-img">
+                    <img src="https://images.unsplash.com/photo-1521111756787-d2f69136cedf?w=500" alt="Tiandy">
+                </div>
+                <div class="brand-info">
+                    <h3>TIANDY</h3>
+                    <p>Teknologi IP Camera canggih dengan harga yang sangat kompetitif.</p>
+                    <span class="btn-sm">Lihat Produk ➔</span>
+                </div>
+            </a>
         </div>
     </section>
+
+    <a href="https://wa.me/6281267525093" class="floating-wa">
+        <span>Tanya Stok Merek</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA">
+    </a>
+
+    <footer><p>© 2026 Patriot CCTV Profesional. Nunang, Payakumbuh.</p></footer>
     <script src="script.js"></script>
 </body>
 </html>
