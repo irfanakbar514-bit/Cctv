@@ -80,3 +80,27 @@ footer { background: var(--dark); color: #666; padding: 40px; text-align: center
     .hero h1 { font-size: 1.6rem; }
     .btn-outline-white { display: block; margin: 15px 0 0 0; }
 }
+/* Styling Logo Klien */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    align-items: center;
+    justify-items: center;
+}
+.logo-item { text-align: center; }
+.logo-item img {
+    max-width: 110px;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+.logo-item:hover img { filter: grayscale(0%); opacity: 1; }
+.logo-item span { display: block; font-size: 0.8rem; font-weight: 600; color: #666; }
+
+@media (max-width: 768px) {
+    .logo-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+}
