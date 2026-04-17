@@ -159,19 +159,22 @@ section.container::before {
     padding: 20px 0;
 }
 
+/* Logo klien tampil apa adanya (berwarna & terang) */
 .client-logos img {
-    height: 50px; /* INI KUNCINYA: Semua logo tingginya sama */
-    width: auto; /* Lebar menyesuaikan otomatis biar gak gepeng */
-    filter: grayscale(0%); /* Bikin semua logo jadi hitam putih (Estetik Minimalis) */
-    opacity: 1; /* Bikin agak transparan */
-    transition: 0.3s; /* Efek pas disentuh */
+    height: 50px;       /* Tinggi logo tetap sama biar rapi */
+    width: auto;        /* Lebar menyesuaikan otomatis */
+    filter: none;       /* Menghapus efek abu-abu */
+    opacity: 1;         /* Terang maksimal (tidak transparan) */
+    transition: 0.3s;   /* Tetap kasih transisi biar halus saat di HP */
+    margin: 10px;       /* Kasih jarak sedikit antar logo */
 }
 
-/* Efek pas kursor diarahin ke logo */
+/* Biar gak ada gerakan pas disentuh */
 .client-logos img:hover {
-    filter: none; /* warna tetap */
-    transform: none; /* gak gerak */
+    transform: none;    /* Menghapus efek membesar */
+    filter: none;
 }
+
 
 /* Penyesuaian buat HP */
 @media (max-width: 768px) {
