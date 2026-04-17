@@ -162,8 +162,8 @@ section.container::before {
 .client-logos img {
     height: 50px; /* INI KUNCINYA: Semua logo tingginya sama */
     width: auto; /* Lebar menyesuaikan otomatis biar gak gepeng */
-    filter: grayscale(100%); /* Bikin semua logo jadi hitam putih (Estetik Minimalis) */
-    opacity: 0.6; /* Bikin agak transparan */
+    filter: grayscale(0%); /* Bikin semua logo jadi hitam putih (Estetik Minimalis) */
+    opacity: 1; /* Bikin agak transparan */
     transition: 0.3s; /* Efek pas disentuh */
 }
 
