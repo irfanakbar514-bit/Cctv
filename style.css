@@ -149,3 +149,37 @@ section.container::before {
     box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
     z-index: 1; /* Biar di atas corak */
 }
+/* Styling Bagian Logo Klien biar Rapi */
+.client-logos {
+    display: flex;
+    justify-content: center; /* Rata tengah */
+    align-items: center; /* Rata tengah vertikal */
+    flex-wrap: wrap; /* Kalau gak muat, turun ke bawah */
+    gap: 40px; /* Jarak antar logo */
+    padding: 20px 0;
+}
+
+.client-logos img {
+    height: 50px; /* INI KUNCINYA: Semua logo tingginya sama */
+    width: auto; /* Lebar menyesuaikan otomatis biar gak gepeng */
+    filter: grayscale(100%); /* Bikin semua logo jadi hitam putih (Estetik Minimalis) */
+    opacity: 0.6; /* Bikin agak transparan */
+    transition: 0.3s; /* Efek pas disentuh */
+}
+
+/* Efek pas kursor diarahin ke logo */
+.client-logos img:hover {
+    filter: grayscale(0%); /* Jadi berwarna lagi */
+    opacity: 1; /* Jadi terang lagi */
+    transform: scale(1.1); /* Agak ngegedein dikit */
+}
+
+/* Penyesuaian buat HP */
+@media (max-width: 768px) {
+    .client-logos {
+        gap: 20px; /* Jarak dirapetin dikit di HP */
+    }
+    .client-logos img {
+        height: 35px; /* Di HP logonya dikecilin biar muat banyak */
+    }
+}
