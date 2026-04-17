@@ -169,9 +169,8 @@ section.container::before {
 
 /* Efek pas kursor diarahin ke logo */
 .client-logos img:hover {
-    filter: grayscale(0%); /* Jadi berwarna lagi */
-    opacity: 1; /* Jadi terang lagi */
-    transform: scale(1.1); /* Agak ngegedein dikit */
+    filter: none; /* warna tetap */
+    transform: none; /* gak gerak */
 }
 
 /* Penyesuaian buat HP */
