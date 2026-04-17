@@ -185,3 +185,27 @@ section.container::before {
         height: 35px; /* Di HP logonya dikecilin biar muat banyak */
     }
 }
+/* KODE PEMAKSA WARNA ASLI */
+.client-logos img {
+    filter: grayscale(0%) !important;    /* Paksa jadi berwarna 0% abu */
+    -webkit-filter: grayscale(0%) !important; /* Buat browser Chrome/HP */
+    opacity: 1 !important;               /* Paksa terang maksimal */
+    height: 50px; 
+    width: auto;
+}
+
+/* Pastikan saat disentuh juga tetep berwarna */
+.client-logos img:hover {
+    filter: grayscale(0%) !important;
+    -webkit-filter: grayscale(0%) !important;
+    opacity: 1 !important;
+}
+
+/* Penyesuaian HP biar tetep berwarna */
+@media (max-width: 768px) {
+    .client-logos img {
+        height: 35px !important;
+        filter: grayscale(0%) !important;
+        -webkit-filter: grayscale(0%) !important;
+    }
+}
