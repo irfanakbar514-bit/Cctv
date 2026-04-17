@@ -5,15 +5,20 @@ window.onscroll = function() {
     reveal();
 };
 function reveal() {
-    const reveals = document.querySelectorAll('.reveal');
-    reveals.forEach(el => {
-        let windowHeight = window.innerHeight;
-        let elementTop = el.getBoundingClientRect().top;
-        if (elementTop < windowHeight - 80) { el.classList.add('active'); }
-    });
+    var reveals = document.querySelectorAll(".reveal");
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        
+        // Jarak trigger diperkecil (dari 150 jadi 50) biar lebih cepat muncul
+        var elementVisible = 50; 
+        
+        if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+        }
+    }
 }
-window.addEventListener("load", reveal);
-window.addEventListener("resize", reveal);
-reveal();
 
-
+window.addEventListener("scroll", reveal);
+// Biar langsung muncul pas halaman terbuka tanpa nunggu scroll
+window.addEventListener("load", reveal); 
