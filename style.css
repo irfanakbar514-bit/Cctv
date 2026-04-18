@@ -30,8 +30,23 @@ nav a { color: #fff; text-decoration: none; margin-left: 10px; font-weight: 600;
     text-align: center;
     color: #fff;
 }
-.hero h1 { font-size: 1.8rem; line-height: 1.4; margin-bottom: 20px; }
-.hero p { font-size: 0.9rem; margin-bottom: 30px; color: #ccc; }
+.hero h1 {
+    font-size: 2.5rem; /* Gue gedein dikit biar tegas */
+    color: #ffce00;    /* Pake warna kuning brand lo biar kontras sama foto */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8); /* Bayangan item biar kebaca */
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Bayangan biar gak kalah sama foto */
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
 
 /* LAYOUT UMUM */
 .container { padding: 80px 8%; }
