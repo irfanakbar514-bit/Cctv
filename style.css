@@ -21,7 +21,7 @@ nav a { color: #fff; text-decoration: none; margin-left: 10px; font-weight: 600;
 /* HERO */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), 
                 url('Images/owner.jpg') no-repeat center center/cover !important;
     display: flex;
     flex-direction: column;
