@@ -93,8 +93,8 @@ footer { background: var(--dark); color: #666; padding: 40px; text-align: center
 .logo-item img {
     max-width: 110px;
     height: auto;
-    filter: grayscale(100%);
-    opacity: 0.6;
+    filter: none;
+    opacity: 1;
     transition: 0.3s;
     margin-bottom: 10px;
 }
