@@ -158,54 +158,22 @@ section.container::before {
     gap: 40px; /* Jarak antar logo */
     padding: 20px 0;
 }
-
-/* Logo klien tampil apa adanya (berwarna & terang) */
-.client-logos img {
-    height: 50px;       /* Tinggi logo tetap sama biar rapi */
-    width: auto;        /* Lebar menyesuaikan otomatis */
-    filter: none;       /* Menghapus efek abu-abu */
-    opacity: 1;         /* Terang maksimal (tidak transparan) */
-    transition: 0.3s;   /* Tetap kasih transisi biar halus saat di HP */
-    margin: 10px;       /* Kasih jarak sedikit antar logo */
-}
-
-/* Biar gak ada gerakan pas disentuh */
-.client-logos img:hover {
-    transform: none;    /* Menghapus efek membesar */
-    filter: none;
-}
-
-
-/* Penyesuaian buat HP */
-@media (max-width: 768px) {
-    .client-logos {
-        gap: 20px; /* Jarak dirapetin dikit di HP */
-    }
-    .client-logos img {
-        height: 35px; /* Di HP logonya dikecilin biar muat banyak */
-    }
-}
-/* KODE PEMAKSA WARNA ASLI */
-.client-logos img {
-    filter: grayscale(0%) !important;    /* Paksa jadi berwarna 0% abu */
-    -webkit-filter: grayscale(0%) !important; /* Buat browser Chrome/HP */
-    opacity: 1 !important;               /* Paksa terang maksimal */
-    height: 50px; 
-    width: auto;
-}
-
-/* Pastikan saat disentuh juga tetep berwarna */
-.client-logos img:hover {
-    filter: grayscale(0%) !important;
-    -webkit-filter: grayscale(0%) !important;
+/* PAKSA WARNA ASLI DARI AWAL (TANPA EFEK) */
+.client-logos img, 
+.client-item img {
+    filter: none !important;
+    -webkit-filter: grayscale(0) !important;
     opacity: 1 !important;
+    height: 50px; /* Ukuran di laptop */
+    width: auto;
+    transform: none !important; /* Biar gak gerak-gerak lagi */
+    transition: none !important; /* Hapus transisi biar gak delay warnanya */
 }
 
-/* Penyesuaian HP biar tetep berwarna */
+/* Penyesuaian HP */
 @media (max-width: 768px) {
     .client-logos img {
-        height: 35px !important;
-        filter: grayscale(0%) !important;
-        -webkit-filter: grayscale(0%) !important;
+        height: 35px !important; /* Ukuran di HP */
     }
 }
+
